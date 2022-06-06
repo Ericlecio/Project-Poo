@@ -1,10 +1,20 @@
-package model;
+package Model;
+
 public class Livro {
 	private String titulo;
 	private String genero;
 	private String situacao;
-	private int preço;
+	private int preco;
+	private int entiqueta;
 	
+	public Livro(String titulo, String genero, String situacao, int preco, int entiqueta) {
+		super();
+		this.titulo = titulo;
+		this.genero = genero;
+		this.situacao = situacao;
+		this.preco = preco;
+		this.entiqueta = entiqueta;
+	}
 	public String getTitulo() {
 		return titulo;
 	}
@@ -23,23 +33,20 @@ public class Livro {
 	public void setSituacao(String situacao) {
 		this.situacao = situacao;
 	}
-	public int getPreço() {
-		return preço;
+	public int getPreco() {
+		return preco;
 	}
-	public void setPreço(int preço) {
-		this.preço = preço;
+	public void setPreco(int preco) {
+		this.preco = preco;
+	}
+	public int getEntiqueta() {
+		return entiqueta;
+	}
+	public void setEntiqueta(int entiqueta) {
+		this.entiqueta = entiqueta;
 	}
 	public Livro() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	public void adicionar() {
-		
-	}
-	
-	public void listar() {
-		
-	}
-
 }
