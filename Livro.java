@@ -4,10 +4,10 @@ public class Livro {
 	private String titulo;
 	private String genero;
 	private String situacao;
-	private int preco;
+	private float preco;
 	private int entiqueta;
 	
-	public Livro(String titulo, String genero, String situacao, int preco, int entiqueta) {
+	public Livro(String titulo, String genero, String situacao, float preco, int entiqueta) {
 		super();
 		this.titulo = titulo;
 		this.genero = genero;
@@ -33,10 +33,10 @@ public class Livro {
 	public void setSituacao(String situacao) {
 		this.situacao = situacao;
 	}
-	public int getPreco() {
+	public float getPreco() {
 		return preco;
 	}
-	public void setPreco(int preco) {
+	public void setPreco(float preco) {
 		this.preco = preco;
 	}
 	public int getEntiqueta() {
@@ -47,6 +47,5 @@ public class Livro {
 	}
 	public Livro() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 }
